@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 
 class List extends Component {
     // write componentDidMount function
+    componentDidMount() {
+        this.props.fetchArticles()
+    }
     // call "this.props.fetchArticles"
 
     render() {
